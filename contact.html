@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>LetiBlog | Contato</title>
+    <meta
+      name="description"
+      content="Entre em contato com a autora do LetiBlog. Envie uma mensagem, sugestão ou dúvida!"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">LetiBlog</div>
+        <div class="menu">
+          <a href="index.html">Início</a>
+          <a href="posts.html">Posts</a>
+          <a href="about.html">Sobre</a>
+          <a href="contact.html">Contato</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="contact-section">
+        <h2>📬 Fale Comigo</h2>
+        <p>
+          Se você tiver dúvidas, sugestões ou apenas quiser bater um papo sobre
+          desenvolvimento, estou aqui! 😊
+        </p>
+        <form id="contactForm">
+          <label for="name">Nome:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Mensagem:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit">Enviar</button>
+          <div id="formResponse" class="form-feedback"></div>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 LetiBlog - Feito com 💜 por Leticia</p>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>

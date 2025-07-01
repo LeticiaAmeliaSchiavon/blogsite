@@ -1,0 +1,460 @@
+/* Reset e estilos base */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fefefe;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #6c63ff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  margin-left: 2rem;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: #a89eff;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+
+  .menu a {
+    margin: 0.5rem 0;
+  }
+}
+
+/* Home */
+.hero {
+  background: linear-gradient(120deg, #625beb, #a084e8);
+  color: white;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+  justify-content: center;
+}
+
+.hero .btn {
+  padding: 0.8rem 2rem;
+  background: white;
+  color: #6c63ff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 1rem;
+  max-height: 400px;
+}
+
+/* Destaques / Cards - Home */
+.highlights {
+  max-width: 1000px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.highlights h2 {
+  font-size: 2.2rem;
+  color: #6c63ff;
+  margin-bottom: 1.5rem;
+}
+
+.cards {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  width: 280px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  text-align: left;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(108, 99, 255, 0.25);
+}
+
+.card img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.card h3 {
+  margin-top: 1rem;
+  color: #6c63ff;
+  font-size: 1.1rem;
+}
+
+.card p {
+  font-size: 0.95rem;
+  margin-top: 0.5rem;
+  color: #444;
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 0.6rem;
+  font-weight: 700;
+  color: #6c63ff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.card a:hover {
+  color: #4b47cc;
+}
+
+/* Newsletter */
+.newsletter {
+  background-color: #f9f9f9;
+  padding: 3rem 1rem;
+  text-align: center;
+  margin-top: 3rem;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+.newsletter h2 {
+  font-size: 1.8rem;
+  color: #6c63ff;
+  margin-bottom: 0.5rem;
+}
+
+.newsletter p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.newsletter form {
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.newsletter input[type="email"] {
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 250px;
+}
+
+.newsletter button {
+  background-color: #6c63ff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter button:hover {
+  background-color: #584ee0;
+}
+
+/* Página de Posts */
+
+.posts-list {
+  max-width: 700px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+  line-height: 1.7;
+}
+
+.posts-list h1 {
+  color: #6c63ff;
+  font-size: 2.2rem;
+  margin-bottom: 0.3rem;
+}
+
+.post-card {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+.post-card h2 {
+  font-size: 1.4rem;
+  margin-bottom: 0.3rem;
+  color: #444;
+}
+
+.post-card h2 a {
+  color: #6c63ff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.post-card h2 a:hover {
+  color: #584ee0;
+}
+
+.post-card p {
+  color: #555;
+  margin-bottom: 0.3rem;
+}
+
+.post-card small {
+  color: #999;
+  font-size: 0.85rem;
+}
+
+/* Página Post Individual */
+.single-post {
+  max-width: 700px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+  line-height: 1.7;
+  color: #333;
+}
+
+.single-post h1 {
+  color: #6c63ff;
+  font-size: 2.2rem;
+  margin-bottom: 0.3rem;
+}
+
+.post-meta {
+  font-size: 0.9rem;
+  color: #888;
+  margin-bottom: 1.5rem;
+}
+
+.single-post p {
+  margin-bottom: 1rem;
+}
+
+.single-post blockquote {
+  border-left: 4px solid #6c63ff;
+  padding-left: 1rem;
+  font-style: italic;
+  color: #444;
+  margin: 1rem 0;
+}
+
+.single-post ul {
+  margin: 1rem 0 1.5rem 1.3rem;
+  color: #444;
+}
+
+.post-tags span {
+  display: inline-block;
+  background: #6c63ff;
+  color: white;
+  padding: 0.3rem 0.7rem;
+  border-radius: 20px;
+  margin-right: 0.5rem;
+  font-size: 0.85rem;
+}
+
+/* Sistema de Comentários */
+.comments-section {
+  max-width: 700px;
+  margin: 3rem auto;
+  padding: 0 1rem 2rem 1rem;
+  color: #333;
+}
+
+.comments-section h2 {
+  color: #6c63ff;
+  margin-bottom: 1rem;
+}
+
+#commentForm {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#commentForm input,
+#commentForm textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  resize: vertical;
+}
+
+#commentForm button {
+  align-self: flex-end;
+  background: #6c63ff;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#commentForm button:hover {
+  background-color: #584ee0;
+}
+
+.comment {
+  margin-top: 1rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 1rem;
+}
+
+.comment p strong {
+  color: #6c63ff;
+}
+
+/* Página About */
+.about-section {
+  max-width: 700px;
+  margin: auto;
+  padding: 2.2rem;
+  line-height: 1.7;
+}
+
+.about-section h1 {
+  color: #6c63ff;
+  font-size: 2.2rem;
+  margin-bottom: 0.3rem;
+}
+
+.about-section ul {
+  list-style-type: square;
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+.about-section p {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.about-section p strong {
+  color: #6c63ff;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #f2f2f2;
+  font-size: 0.9rem;
+}
+
+/* Página de Contato */
+.contact-section {
+  max-width: 600px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.contact-section h2 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+  color: #6c63ff;
+  font-size: 2.2rem;
+}
+
+.contact-section p {
+  text-align: center;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+form label {
+  font-weight: bold;
+  margin-top: 1rem;
+  display: block;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+form button {
+  background-color: #6c63ff;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  margin-top: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background-color: #574fd6;
+}
+
+.form-feedback {
+  margin-top: 1rem;
+  font-weight: 500;
+  color: #28a745;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .menu a {
+    margin: 0.5rem 0;
+  }
+}
