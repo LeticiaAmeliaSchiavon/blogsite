@@ -64,7 +64,7 @@ body {
   font-size: 1.2rem;
   display: flex;
   align-items: center;
-  flex-direction: column-reverse;
+  flex-direction: column;
   justify-content: center;
 }
 
